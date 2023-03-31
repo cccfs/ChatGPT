@@ -77,7 +77,7 @@ async function init() {
       topDom.id = "chatgpt-app-window-top";
       document.body.appendChild(topDom);
 
-      if (window.location.host === 'chat.openai.com') {
+      if (window.location.host === 'zzq.zzqiang.com') {
         const nav = document.body.querySelector('nav');
         if (nav) {
           const currentPaddingTop = parseInt(window.getComputedStyle(document.querySelector('nav'), null).getPropertyValue('padding-top').replace('px', ''), 10);
@@ -106,7 +106,7 @@ async function init() {
     if(e.keyCode == 229) e.stopPropagation();
   }, true)
 
-  if (window.location.host === 'chat.openai.com') {
+  if (window.location.host === 'zzq.zzqiang.com') {
     window.__sync_prompts = async function() {
       await invoke('sync_prompts', { time: Date.now() });
     }

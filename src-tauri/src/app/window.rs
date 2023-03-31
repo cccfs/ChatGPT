@@ -26,7 +26,7 @@ pub fn tray_window(handle: &tauri::AppHandle) {
       .initialization_script(include_str!("../scripts/core.js"))
       .user_agent(&app_conf.ua_tray);
 
-    if app_conf.tray_origin == "https://chat.openai.com" && !app_conf.tray_dashboard {
+    if app_conf.tray_origin == "https://zzq.zzqiang.com" && !app_conf.tray_dashboard {
       tray_win = tray_win
         .initialization_script(include_str!("../vendors/floating-ui-core.js"))
         .initialization_script(include_str!("../vendors/floating-ui-dom.js"))
